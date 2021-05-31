@@ -1,0 +1,6 @@
+test {
+	int i = 1;
+	float j = 3.0;
+    <int,int> p = <3,4>;
+    <int, float> p2 = <i+2,j-i>;
+}

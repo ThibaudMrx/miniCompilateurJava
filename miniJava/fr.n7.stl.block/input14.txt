@@ -1,0 +1,6 @@
+test {
+	typedef enum couleuri {ROUGE, VERT, BLEU, BLERT} couleur;
+	couleur c = ROUGE;
+	couleur twingo = BLERT;
+}
+

@@ -1,0 +1,7 @@
+test {
+	int test(int a, float b) {
+		int c = 1;
+		return a;
+	}
+	print test(2, 3.0);
+}

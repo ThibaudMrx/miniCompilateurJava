@@ -1,0 +1,17 @@
+ClasseDeclaration / ClasseType :
+    -> liste pour les methodes (Constructeur ?)
+    -> liste pour les attributs
+    -> liste pour les constructeurs
+
+    => une liste pour tout
+
+Attribut :
+    -> type
+    -> nom ?
+    -> expression 
+
+Methode : voir Function
+
+Interface :
+    -> liste de signature de methode
+

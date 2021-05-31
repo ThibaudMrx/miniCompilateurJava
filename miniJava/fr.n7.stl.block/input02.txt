@@ -1,0 +1,12 @@
+test {
+	const int ic = 1;
+	int iv = 5;
+	const float fc = 3.0;
+	float fv = 5.0;
+	const String sc = "test";
+	String sv = "autre test";
+	const character cc = 'c';
+	character cv = 'd';
+	const boolean bc = true;
+	boolean bv = false;
+}

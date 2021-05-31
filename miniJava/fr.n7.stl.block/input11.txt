@@ -1,0 +1,11 @@
+test {
+	int p = 6;
+    const int j = 2;
+    if (p<5) {
+        int p = 5;
+    } else {
+        int p = 3;
+    }
+    int k = 10;
+    
+}

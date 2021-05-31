@@ -1,0 +1,12 @@
+test {
+	int i = 1;
+	i = 3;
+	float j = 3.0;
+	j = 5.0;
+	String s = "test";
+	s = "autre test";
+	character c = 'c';
+	c = 'p';
+	boolean b = true;
+	b = false;
+}

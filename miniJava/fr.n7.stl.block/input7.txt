@@ -1,0 +1,8 @@
+test {
+    const int i = 5;
+    <int,float> p = <3,4.0>;
+    int k = fst p;
+    float l = snd p;
+    int j = 3;
+    boolean b = true;
+}

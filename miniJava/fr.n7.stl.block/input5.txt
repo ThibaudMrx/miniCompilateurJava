@@ -1,0 +1,9 @@
+test {
+    typedef struct Pointi {int x; int y;} Point;
+    typedef struct Segmenti {Point ext1; Point ext2;} Segment;
+    Point p1 = {0,1};
+    Point p2 = {2,3};
+    Segment s = {p1, p2};
+    Point p = s.ext1;
+    int i = s.ext1.x;
+}

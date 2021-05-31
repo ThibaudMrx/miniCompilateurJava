@@ -1,0 +1,8 @@
+test {
+    const int i = -5;
+    <int,boolean> p = <i,true>;
+    int k = fst p;
+    boolean b = snd p;
+    k = 4;
+    b = !b;
+}

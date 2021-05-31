@@ -1,0 +1,64 @@
+1/ Faut-il mieux faire une ClassDeclaration dans fr.n7.stl.block.ast.type ou une ClasseType fr.n7.block.ast.instruction.declaration ?
+
+Idée : Faire comme les enregistrement (RecordType)
+
+Reponse :
+    Classe declaration comme Record
+
+--------------------------------------------------------------------------------
+2/ Que fait-on des éléments qui ne sont plus gérer dans le projet (héritage) ?
+
+Idées : Créer un classe vide la représentant -> Ou la placer ?
+
+Reponse :
+
+--------------------------------------------------------------------------------
+3/ Liens envisagés entre les déclarations de classe simple, d'interface, de classe abstraite ?
+
+Reponse :
+
+--------------------------------------------------------------------------------
+4/ Sur le Parser : conception global : classes envisagées et leur placement dans les packages. De plus, sur quoi lancer la chaine de vérification dans "Program" ?
+
+Reponse : 
+    la classe principale apparait à la fin
+    Quand on atteind MAIN, on peut lancer toutes les opérations
+    Créer la table des symboles depuis la classe MAIN
+    
+    2 parties ? -> classe programme {contient une liste d'interface et de classe}
+                -> classe spécifique {add classe main et add classe element}
+
+    => La classe MAIN doit tout lancer.
+
+--------------------------------------------------------------------------------
+5/ Faut-il séparer les attributs et les méthodes de classe ou les réunirent dans le même FieldDeclaration ? 2 listes disjointes ? une liste contenant 2 listes ? 1 liste contenant les deux mélangés ?
+
+Problème : Point.x renvoie la valeur de x, Point.getX() renvoie aussi la valeur de x -> comment c'est interpreter dans semantiquement , comment s'assurer que le compilateur ne se trompe pas de liste ?
+
+Reponse :
+    dans classDeclaration il y a FieldDeclaration et MethodDeclaration deux listes
+    MethodDeclaraiton dérive de FunctionType
+
+--------------------------------------------------------------------------------
+6/ Declaration de classe ?
+    RESULT = new ClassDeclaration(...)
+    ou
+    RESULT = new NamedType(new ClassDeclaration(...))
+
+Reponse :
+    NamedType(...)
+--------------------------------------------------------------------------------
+7/ Comment interpreter les mots clefs "super" et "this" ?
+
+Reponse :
+    dasn une méthode this et super ont des roles différent :
+        -> this pointeur (objet, contient une référence vers un objet)
+        -> super héritage [est enlevé]
+
+    reel difference c'est le typage , super va cherhcer dans une classe supérieur et this va chercher dans la même classe
+
+    this et super sont des pointeurs
+    mettre dans la table des symboles this et super comme un parametre non déclarés explicitement
+    => ParameterDeclaration
+
+

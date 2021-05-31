@@ -1,0 +1,9 @@
+test {
+	int i = 1;
+	const int j = 2;
+	int k = i+j;
+	k = j-5;
+	int *ptr = &k;
+	int l = *ptr;
+	*ptr = 10;
+}

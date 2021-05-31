@@ -1,0 +1,12 @@
+test
+PUSH 1
+LOADL 1
+STORE (1) 6[LB]
+LOAD (1) 5[LB]
+RETURN (1) 2
+POP (0) 1
+LOADL 0
+RETURN (1) 2
+POP (0) 0
+HALT
+

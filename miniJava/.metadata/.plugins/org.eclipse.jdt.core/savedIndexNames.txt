@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/home/abriain/Annee_2/TDL/svn/G05/miniJava/.metadata/.plugins/org.eclipse.jdt.core
+321414870.index
+1467419864.index
+343615862.index
+2610183317.index
+646308851.index
